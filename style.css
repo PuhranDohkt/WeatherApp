@@ -68,12 +68,12 @@ button {
   color: rgb(33, 33, 33);
   font-size: 56px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 65px;
 }
 
 .units {
   position: relative;
-  top: -34px;
+  top: -28px;
 }
 
 .search-form {
