@@ -1,5 +1,7 @@
 body {
   font-family: arial, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 h1 {
@@ -31,13 +33,6 @@ button {
   padding: 0;
 }
 
-.weather-container {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  margin: 20px auto;
-  max-width: 600px;
-  padding: 20px 16px 24px 16px;
-}
-
 .basic {
   margin: 10 0;
   padding: 0;
@@ -51,6 +46,8 @@ button {
 }
 
 .weather-app {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
   border: 1px solid #dadde1;
   padding: 15px;
   margin: 20px auto 10px auto;
