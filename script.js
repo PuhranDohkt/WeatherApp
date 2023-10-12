@@ -100,11 +100,11 @@ function showCelsius(event) {
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
 
-//temps-Feature
-let celsius = document.querySelector("#celsius-link");
-celsius.addEventListener("click", showCelsius);
+//conversions-Feature
 let fahrenheit = document.querySelector("#fahrenheit-link");
 fahrenheit.addEventListener("click", showFahrenheit);
+let celsius = document.querySelector("#celsius-link");
+celsius.addEventListener("click", showCelsius);
 
 let celsiusTemperature = null;
 //currentButton-Feature
