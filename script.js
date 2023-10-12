@@ -24,7 +24,7 @@ time.innerHTML = `${day} ${hours}:${minutes}`;
 
 //showWeatherCondition
 function showWeatherCondition(response) {
-  let celsiusTemperature = response.data.main.temp;
+  celsiusTemperature = response.data.main.temp;
 
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
