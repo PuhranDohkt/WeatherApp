@@ -23,7 +23,8 @@ let time = document.querySelector("#time");
 time.innerHTML = `${day} ${hours}:${minutes}`;
 
 //Forecast
-function showForecast() {
+function showForecast(response) {
+  console.log(response.data.daily);
   let ForecastElement = document.querySelector("#forecast");
   let days = ["Thu", "Fri", "Sat", "Sun"];
   let forecastHTML = `<div class="row">`;
@@ -47,6 +48,12 @@ function showForecast() {
   });
   forecastHTML = forecastHTML + `</div>`;
   ForecastElement.innerHTML = forecastHTML;
+}
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "de2c40e370d58e257faf07ba4ea95840";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showForecast);
 }
 
 //showWeatherCondition
@@ -74,6 +81,7 @@ function showWeatherCondition(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -140,4 +148,3 @@ currentButton.addEventListener("click", getCurrentLocation);
 
 //default-temp
 searchCity("Tehran");
-showForecast();
