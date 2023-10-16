@@ -22,6 +22,29 @@ let day = days[now.getDay()];
 let time = document.querySelector("#time");
 time.innerHTML = `Last Update: ${day} ${hours}:${minutes}`;
 
+//background
+function setBackground(season) {
+  let tone = document.getElementById("app-body");
+  let month = now.getMonth();
+  switch (true) {
+    case month >= 6 && month <= 8:
+      document.body.style.backgroundColor = "red";
+      break;
+    case month >= 9 && month <= 11:
+      tone.style.backgroundColor = "#ffffff";
+      document.body.style.backgroundImage =
+        "url('     https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/877/original/spring.jpg?1697464690')";
+      break;
+    case month == 12 || month == 1 || month == 2:
+      tone.style.backgroundColor = "#ffffff";
+      document.body.style.backgroundImage =
+        "url('      https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/875/original/winter.jpg?1697464175')";
+      document.body.style.backgroundColor = "red";
+      break;
+    case month >= 3 && month <= 5:
+      document.body.style.backgroundColor = "red";
+  }
+}
 //Forecast
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -165,3 +188,4 @@ currentButton.addEventListener("click", getCurrentLocation);
 
 //default-temp
 searchCity("Tehran");
+setBackground("summer");

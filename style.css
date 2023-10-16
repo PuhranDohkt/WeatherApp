@@ -1,13 +1,14 @@
 body {
   font-family: arial, sans-serif;
+  background-size: cover;
 }
 
 h1 {
   color: #7c7c7c;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 100;
   line-height: 28px;
-  margin: 0;
+  margin: 10px 0 5px 0;
 }
 ul {
   padding: 0;
@@ -50,11 +51,11 @@ button {
 }
 
 .weather-app {
-  box-shadow: 4px 5px 26px -3px rgba(53, 53, 53, 0.89);
+  box-shadow: 4px 5px 26px -3px rgba(53, 53, 53, 0.5);
   width: 780px;
   border: 1px solid #dadde1;
   padding: 15px;
-  margin: 20px auto 10px auto;
+  margin: 80px auto 10px auto;
   border-radius: 10px;
   max-width: 600px;
 }
