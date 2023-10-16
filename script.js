@@ -33,16 +33,17 @@ function setBackground(season) {
     case month >= 9 && month <= 11:
       tone.style.backgroundColor = "#ffffff";
       document.body.style.backgroundImage =
-        "url('    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/871/original/fall.jpg?1697462455')";
+        "url('   https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/871/original/fall.jpg?1697462455')";
       break;
     case month == 12 || month == 1 || month == 2:
       tone.style.backgroundColor = "#ffffff";
       document.body.style.backgroundImage =
         "url('      https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/875/original/winter.jpg?1697464175')";
-      document.body.style.backgroundColor = "red";
       break;
     case month >= 3 && month <= 5:
-      document.body.style.backgroundColor = "red";
+      tone.style.backgroundColor = "#ffffff";
+      document.body.style.backgroundImage =
+        "url('   https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/883/original/8518192.jpg?1697466030')";
   }
 }
 //Forecast
