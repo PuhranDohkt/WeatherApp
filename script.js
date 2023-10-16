@@ -33,7 +33,7 @@ function setBackground(season) {
     case month >= 9 && month <= 11:
       tone.style.backgroundColor = "#ffffff";
       document.body.style.backgroundImage =
-        "url('     https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/877/original/spring.jpg?1697464690')";
+        "url('    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/871/original/fall.jpg?1697462455')";
       break;
     case month == 12 || month == 1 || month == 2:
       tone.style.backgroundColor = "#ffffff";
