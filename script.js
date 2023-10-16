@@ -83,9 +83,7 @@ function showWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#feels").innerHTML = Math.round(
-    response.data.main.temp
-  );
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document
