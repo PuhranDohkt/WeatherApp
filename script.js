@@ -135,7 +135,7 @@ function getCurrentLocation(event) {
 
 //conversions
 
-function showFahrenheit(event) {
+/*function showFahrenheit(event) {
   event.preventDefault();
   let temperature = document.querySelector("#temperature");
   fahrenheit.classList.add("active");
@@ -158,6 +158,7 @@ let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", showCelsius);
 
 let celsiusTemperature = null;
+*/
 //currentButton-Feature
 let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", getCurrentLocation);
