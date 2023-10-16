@@ -110,6 +110,10 @@ button {
   text-decoration: none;
 }
 
+#more {
+  margin-top: 10px;
+}
+
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
