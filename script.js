@@ -28,7 +28,9 @@ function setBackground(season) {
   let month = now.getMonth();
   switch (true) {
     case month >= 6 && month <= 8:
-      document.body.style.backgroundColor = "red";
+      tone.style.backgroundColor = "#ffffff";
+      document.body.style.backgroundImage =
+        "url('  https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/049/original/summer.jpg?1697554744')";
       break;
     case month >= 9 && month <= 11:
       tone.style.backgroundColor = "#ffffff";
